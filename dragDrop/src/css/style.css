@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a251dd;
+}
+
+.main {
+  padding: 2rem 0 0 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.inp-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 140%;
+  outline: none;
+}
+
+.inp-btn .btn {
+  padding: 10px 20px;
+  background-color: #8052ec;
+  color: white;
+  border: 0;
+}
+
+.parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open,
+.progress-custom,
+.completed {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+  height: 25rem;
+}
+
+.open h3,
+.progress-custom h3,
+.completed h3 {
+  color: #8052ec;
+}
+
+.list-item {
+  border: 1px solid #8052ec;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+}
+
+.list-content h5 {
+  cursor: pointer;
+  margin: 0;
+}
+
+.list-icon {
+  border-radius: 10px;
+  background-color: #8052ec;
+  padding: 10px 15px;
+}
+
+.list-icon i {
+  color: white;
+  cursor: pointer;
+}
+
+.list-content h5.checked {
+  text-decoration: line-through;
+}
