@@ -21,6 +21,13 @@ btn.addEventListener("click", function () {
 </div>`;
     lists.append(newTask);
     input.value = "";
+
+    newTask.addEventListener("dragstart", function (e) {
+      e.dataTransfer.setData("text", e.target.id);
+      setTimeout(() => {
+        e.target.classList.add("hide");
+      }, 0);
+    });
   }
 });
 
@@ -30,16 +37,6 @@ lists.addEventListener("click", function (e) {
   } else if (e.target.tagName === "I") {
     e.target.parentElement.parentElement.remove();
   }
-});
-
-items.forEach((element) => {
-  element.addEventListener("dragstart", function (e) {
-    e.dataTransfer.setData("text", e.target.id);
-    setTimeout(() => {
-      e.target.classList.add("hide");
-    }, 0);
-    console.log("drag start");
-  });
 });
 
 parts.forEach((element) => {
